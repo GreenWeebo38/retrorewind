@@ -1,10 +1,10 @@
 .image-container {
     position: relative;
-    display: inline-block;
+    display: grid;
   }
   
   .image-container img {
-    display: block;
+    display: inline;
     width: 100%;
     height: auto;
   }
@@ -14,7 +14,7 @@
     top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
-    background-color: #00000000; 
+    background-color: #ff000000; 
     color: #ffffff; 
     padding: 10px 20px; 
     font-size: 20px; 
