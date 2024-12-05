@@ -2,25 +2,77 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
-    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
     <link rel="stylesheet" href="style.css">
-    <title>Main Page</title>
 </head>
 <body>
-    
-    <!--Background -->
-    <div class="image-container">
-        <img class="background-image" src="https://impactcoding.github.io/rr-vr-ranking/assets/backgrounds/retro_rewind_background.png" alt="image">
-        <div class="overlay-text">
-        <h1> Welcome to Beta Retro Rewind Website</h1>
-        <h2>This is a Test Website to see if anything works</h2>
-        <h2>Go ahead and Download Retro Rewind</h2>
-        <a href="https://wiki.tockdom.com/wiki/Retro_Rewind"><h2>Download Retro Rewind HERE!!</h2></a>
-    <section class="overlay-branding">
-        <img src="https://hacksguidewiki.sfo3.digitaloceanspaces.com/hacksguidewiki/RetroRewindLogo.png" alt="RR logo">
-        <h1>a Mario Kart Wii Mod for Wii/Wiiu and Dolphin Emulator.</h1>
-      </section>
-    </div>
+    <header>
+        <div class="container">
+            <!-- Main Logo -->
+            <a href="#" class="logo">
+                <img src="https://hacksguidewiki.sfo3.digitaloceanspaces.com/hacksguidewiki/RetroRewindLogo.png" alt="Mario Kart Wii Mod Logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#download">Download</a></li>
+                    <li><a href="#credits">Credits</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <h2>Experience Mario Kart Like Never Before!</h2>
+            <p>New tracks, characters, and endless fun. Download now and race your friends!</p>
+            <a href="#download" class="cta-button">Download Now</a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="container">
+                <h2>About the Mod</h2>
+                <p>This mod enhances your Mario Kart Wii experience with new tracks, custom characters, and gameplay improvements. Whether you're a casual racer or a hardcore competitor, this mod has something for everyone!</p>
+            </div>
+        </section>
+
+        <!-- Download Section -->
+        <section id="download">
+            <div class="container">
+                <h2>Download</h2>
+                <p>Follow the instructions to download and install the mod:</p>
+                <ol>
+                    <li>Ensure you have a clean Mario Kart Wii ISO file.</li>
+                    <li>Download the mod files from the link below.</li>
+                    <li>Use modding tools like Dolphin Emulator or Riivolution to apply the mod.</li>
+                </ol>
+                <a href="https://wiki.tockdom.com/wiki/Retro_Rewind" class="download-button">Download the Mod</a>
+            </div>
+        </section>
+
+        <!-- Credits Section -->
+        <section id="credits">
+            <div class="container">
+                <h2>Credits</h2>
+                <p>Special thanks to the amazing team and community that made this mod possible!</p>
+                <ul>
+                    <li>Developer: ZPL, RetroWFC and The Entire Retro Rewind Team</li>
+                    <li>Website Designer: GreenWeebo38</li>
+                    <li>Testers: all Testers</li>
+                    <li>Special Thanks: TO YOU for Playing the MOD</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Retro Rewind. All rights reserved. Not affiliated with Nintendo.</p>
+        </div>
+    </footer>
 </body>
 </html>

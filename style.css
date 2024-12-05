@@ -1,22 +1,132 @@
-.image-container {
-    position: relative;
-    display: grid;
-  }
-  
-  .image-container img {
-    display: inline;
-    width: 100%;
-    height: auto;
-  }
-  
-  .overlay-text {
-    position: absolute;
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    background-color: #ff000000; 
-    color: #ffffff; 
-    padding: 10px 20px; 
-    font-size: 20px; 
-    text-align: center;
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: white; /* Set default text color to white */
+    background: url('https://impactcoding.github.io/rr-vr-ranking/assets/backgrounds/retro_rewind_background.png') no-repeat center center fixed;
+    background-size: cover; /* Ensures the image covers the entire page */
 }
+
+/* Header Styles */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #ffcc00; /* Bright yellow for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    padding: 50px 20px;
+    color: white; /* Explicit text color for the hero section */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add subtle shadow for readability */
+}
+
+#hero h2 {
+    font-size: 2.5rem;
+}
+
+#hero .cta-button {
+    background: #ff4500; /* Bright orange button */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Section Styles */
+section {
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    text-align: center;
+    color: #ffcc00; /* Bright yellow for section headers */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for readability */
+}
+
+section p, section ul, section ol {
+    color: white; /* Consistent text color */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Subtle shadow */
+    font-size: 1.1rem;
+}
+
+#download .download-button {
+    display: inline-block;
+    background: #e74c3c;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.6); /* Slightly transparent black background */
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* General Section Styles */
+section {
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center; /* Center text */
+}
+
+/* Specific Styles for Download Button */
+#download .download-button {
+    display: inline-block;
+    background: #e74c3c;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Specific Styles for Lists in Credits Section */
+#credits ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+#credits ul li {
+    margin: 5px 0;
+    font-size: 1.1rem;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Add shadow for better visibility */
+}
+
