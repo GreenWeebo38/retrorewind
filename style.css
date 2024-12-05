@@ -1,18 +1,63 @@
 /* General Styles */
+@font-face {
+    font-family: 'mariokart';
+    src: url('./fonts/mario_kart_f2.ttf') format('truetype');
+}
+
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'mariokart', sans-serif; /* Use the custom font as the primary option */
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    line-height: 1.8;
+    width: auto;
     color: white; /* Set default text color to white */
-    background: url('https://impactcoding.github.io/rr-vr-ranking/assets/backgrounds/retro_rewind_background.png') no-repeat center center fixed;
+    background: url('https://impactcoding.github.io/rr-vr-ranking/assets/backgrounds/retro_rewind_background.png') no-repeat center;
     background-size: cover; /* Ensures the image covers the entire page */
 }
+
+#character {
+    display: flex; /* Use flexbox to align items horizontally */
+    justify-content: center; /* Center the images horizontally */
+    align-items: center; /* Center the images vertically */
+    height: 100vh; /* Ensure the section takes up the full viewport height */
+    width: 100%; /* Ensure the section takes up the full width of the page */
+    gap: 20px; /* Add space between the images */
+}
+
+.image {
+    height: 250px; /* Set height */
+    width: 280px; /* Set width */
+    object-fit: cover; /* Ensure the images cover their box without distortion */
+}
+
+/* unvisited link */
+a:link {
+  color: #fffefe;
+}
+
+/* visited link */
+a:visited {
+  color: #902fff;
+    
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink; 
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
 
 /* Header Styles */
 header {
     text-align: center;
     margin-bottom: 20px;
+    float:left,
 }
 
 header nav ul {
@@ -21,16 +66,23 @@ header nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
+    position:sticky;
+    top: 100px;
+    
 }
 
 header nav ul li {
     margin: 0 10px;
+    position:sticky;
+    top: 100px;
 }
 
 header nav ul li a {
-    color: #ffcc00; /* Bright yellow for links */
+    color: white; /* Bright yellow for links */
     text-decoration: none;
     font-weight: bold;
+    position:sticky;
+    top: 100px;
 }
 
 /* Hero Section */
@@ -38,11 +90,11 @@ header nav ul li a {
     text-align: center;
     padding: 50px 20px;
     color: white; /* Explicit text color for the hero section */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add subtle shadow for readability */
+    text-shadow: 2px 2px 4px rgb(138, 0, 32, 0.7); /* Add subtle shadow for readability */
 }
 
 #hero h2 {
-    font-size: 2.5rem;
+    font-size: 30px;
 }
 
 #hero .cta-button {
@@ -51,25 +103,38 @@ header nav ul li a {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: bold;
+    
 }
 
 /* Section Styles */
 section {
     padding: 20px 0;
     margin-bottom: 20px;
+
 }
 
+.column {
+  float: left;
+  width: 20%;
+  padding-left: 130px;
+    padding-top: 60px;
+}
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
 section h2 {
     text-align: center;
     color: #ffcc00; /* Bright yellow for section headers */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for readability */
+    text-shadow: 2px 2px 4px rgb(98, 14, 0, 0.7); /* Shadow for readability */
 }
 
 section p, section ul, section ol {
     color: white; /* Consistent text color */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Subtle shadow */
+    text-shadow: 1px 1px 3px rgb(3, 0, 0, 0.7); /* Subtle shadow */
     font-size: 1.1rem;
 }
 
@@ -130,3 +195,33 @@ section {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Add shadow for better visibility */
 }
 
+/* Decorative Image Styling */
+.left-image {
+    position: absolute; /* Position relative to the viewport */
+    top: 50%; /* Center vertically */
+    left: 20px; /* Position slightly inward from the left edge */
+    transform: translateY(-50%); /* Center the image vertically */
+    width: 150px; /* Adjust the width to make it smaller */
+    height: auto; /* Maintain the aspect ratio */
+    z-index: 10; /* Ensure it appears in front of the background */
+}
+
+
+#video-container {
+    position: fixed; /* Make it cover the entire screen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Put the video behind other content */
+    overflow: hidden;
+}
+
+.music {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none; /* Hide the iframe but keep it playing */
+}
