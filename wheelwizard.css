@@ -1,7 +1,7 @@
 /* General Styles */
 @font-face {
     font-family: 'mariokart';
-    src: url('/fonts/ATTFShinGoProHeavy.ttf') 
+    src: url('./fonts/ATTFShinGoProHeavy.ttf') 
         format('truetype');
     font-weight: bold;
 }
