@@ -1,8 +1,8 @@
 /* General Styles */
 @font-face {
     font-family: 'mariokart';
-    src: url('./fonts/mario_kart_f2.ttf') 
-        format('opentype');
+    src: url('/fonts/ATTFShinGoProHeavy.ttf') 
+        format('truetype');
     font-weight: bold;
 }
 
@@ -84,6 +84,7 @@ header nav ul li a {
     font-weight: bold;
     position:sticky;
     top: 100px;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.7);
 }
 
 /* Hero Section */
@@ -206,3 +207,41 @@ section {
     height: auto; /* Maintain the aspect ratio */
     z-index: 10; /* Ensure it appears in front of the background */
 }
+
+#column {
+    display: flex; /* Align items horizontally */
+    justify-content: center; /* Center the images horizontally */
+    align-items: center; /* Center the images vertically */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    height: auto; /* Adjust height automatically */
+    width: 100%; /* Full width of the page */
+    gap: 20px; /* Space between images */
+    box-sizing: border-box; /* Include padding and border in dimensions */
+    padding: 10px; /* Optional padding for better appearance */
+}
+
+.image {
+    height: 250px; /* Image height */
+    width: 280px; /* Image width */
+    object-fit: cover; /* Maintain aspect ratio */
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+/* Media Queries for Responsiveness */
+
+/* For screens smaller than 768px (tablets, small laptops) */
+@media (max-width: 768px) {
+    .image {
+        height: 200px; /* Adjust height for smaller screens */
+        width: 220px; /* Adjust width for smaller screens */
+    }
+}
+
+/* For screens smaller than 480px (mobile devices) */
+@media (max-width: 480px) {
+    .image {
+        height: 150px; /* Further reduce image size */
+        width: 180px;
+    }
+}
+
