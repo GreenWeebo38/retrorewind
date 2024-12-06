@@ -37,11 +37,11 @@ a:link {
   color: #fffefe;
 }
 
-/* visited link */
+/* Visited link */
 a:visited {
-  color: #902fff;
-    text-decoration: 
-}
+    color: #902fff;
+    text-decoration: none; /* Add a value for text-decoration */
+  }
 
 /* mouse over link */
 a:hover {
