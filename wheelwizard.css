@@ -12,7 +12,7 @@ body {
     padding: 0;
     line-height: 1.8;
     color: white; /* Default text color */
-    background: url('/Images/WheelWizardbg.png') no-repeat center;
+    background: url('https://cdn.discordapp.com/attachments/1301284793857609821/1314692766982471750/IMG_9968.png?ex=6754b28d&is=6753610d&hm=546ac057374a08f5da5fe336964d8f676336b55e1dac3532237634a00fccfc55&') no-repeat center;
     background-size: cover; /* Cover the entire page */
 }
 
