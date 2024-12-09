@@ -11,10 +11,19 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.8;
+    cursor: url("cursors/Normal\ Select.png"), auto !important;
     width: auto;
     color: white; /* Set default text color to white */
     background: url('https://impactcoding.github.io/rr-vr-ranking/assets/backgrounds/retro_rewind_background.png') no-repeat center;
     background-size: cover; /* Ensures the image covers the entire page */
+}
+
+/* Optional: Styling for the page */
+h1 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 20%;
+    color: #333;
 }
 
 #character {
@@ -45,8 +54,9 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-  color: hotpink; 
-}
+    color: hotpink; 
+        cursor: url("cursors/Link-Select.png"), auto;
+  }
 
 /* selected link */
 a:active {

@@ -11,9 +11,18 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.8;
+    cursor: url("./cursors/Normal\ Select.png"), auto !important;
     color: white; /* Default text color */
     background: url('./Images/WheelWizardbg.png') no-repeat center;
     background-size: cover; /* Cover the entire page */
+}
+
+/* Optional: Styling for the page */
+h1 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 20%;
+    color: #333;
 }
 
 #column {
@@ -42,6 +51,7 @@ a:visited {
 
 a:hover {
     color: #65f800;
+        cursor: url("cursors/Link-Select.png"), auto;
 }
 
 a:active {
@@ -213,3 +223,5 @@ footer {
         width: 180px;
     }
 }
+
+
